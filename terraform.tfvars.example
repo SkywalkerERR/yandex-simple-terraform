@@ -1,0 +1,12 @@
+# Скопируйте этот файл в terraform.tfvars и при необходимости измените значения:
+#   copy terraform.tfvars.example terraform.tfvars
+#
+# terraform.tfvars НЕ коммитьте в git (см. .gitignore).
+
+zone                = "ru-central1-a"
+vm_name             = "tf-hello-vm"
+vm_cores            = 2
+vm_memory           = 2
+vm_disk_size        = 20
+ssh_username        = "ubuntu"
+ssh_public_key_path = "~/.ssh/id_ed25519.pub"
