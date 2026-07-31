@@ -1,0 +1,23 @@
+# Локальные секреты и персональные настройки
+*.tfvars
+!terraform.tfvars.example
+*.auto.tfvars
+
+# Состояние Terraform (не коммитьте в git!)
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Ключи и чувствительные файлы
+*.pem
+*.key
+authorized_key.json
+sa-key.json
+.env
