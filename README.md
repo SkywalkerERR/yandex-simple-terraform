@@ -269,14 +269,3 @@ terraform destroy
 | Браузер не открывается сразу | Подождите 1–2 минуты: cloud-init ставит nginx |
 | `Permission denied` по SSH | Убедитесь, что используете **приватный** ключ к тому же `.pub` |
 | Платный аккаунт / квота | Проверьте billing и квоты Compute/VPC в консоли |
-
----
-
-## Что изучать дальше
-
-1. Разнести код по модулям (`modules/vm`, `modules/network`)
-2. Хранить state удалённо (S3-совместимое хранилище Object Storage)
-3. Добавить второй ресурс (Load Balancer, Managed PostgreSQL, Object Storage)
-4. CI/CD: `plan` в Pull Request, `apply` после merge
-
-Удачной практики — и не забывайте про `destroy` после экспериментов.
